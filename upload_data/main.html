@@ -1,0 +1,18 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head><title>檔案上傳</title></head>
+<body>
+	<form action='/upload_data/data1' method='post' enctype='multipart/form-data'>
+		圖片檔名：<input type='text' name='file' ><br>
+		<font color='red'>*要包含副檔名</font><br>
+		對照片的描述：<input type='text' name='description'><br>
+		資料存放位置選擇：<select name='archive'><option value='bin_1'>檔案櫃 一</option>
+		<option value='bin_2'>檔案櫃 二</option></select><br>
+		<input type='submit' name='submit' value='儲存資料'>
+	</form>
+	開啟上傳頁面
+	<a href="https://sites.google.com/site/yundongyongpinshe/config/pagetemplates/xiang-bu" target="_blank">檔案櫃 一</a>
+	<a href="http://sites.google.com/site/yundongyongpinshe/config/pagetemplates/tu-dang" target="_blank">檔案櫃 二</a>
+	<br><a href='/'>回首頁</a>
+</body>
+</html>

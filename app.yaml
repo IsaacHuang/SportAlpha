@@ -1,0 +1,118 @@
+application: rapid-airship-630
+version: 2
+runtime: python27
+api_version: 1
+threadsafe: false
+
+handlers:
+- url: /
+  script: main.py
+- url: /reg
+  script: reg.py
+- url: /assign
+  script: assign.py
+- url: /upload
+  script: file_upload.py
+- url: /upload_url
+  script: upload_url.py
+- url: /file_uploaded
+  script: file_uploaded.py
+- url: /LogIn
+  script: LogIn.py
+- url: /show
+  script: show.py
+- url: /admin
+  static_files: admin.html
+  upload: admin.html
+- url: /photo_info
+  script: photo_info.py
+- url: /Remove_Show
+  script: Remove_Show.py
+- url: /Photo_Remove
+  script: Photo_Remove.py
+- url: /book
+  script: book.py
+- url: /photo_add
+  script: photo_add.py
+- url: /save
+  script: save.py
+- url: /album_book
+  script: album_book.py
+- url: /category
+  script: category.py
+- url: /item_info
+  script: item_info.py
+- url: /New_company
+  script: New_company.py
+- url: /item_add
+  script: item_add.py
+- url: /return_page
+  script: return_page.py
+- url: /item_save
+  script: item_save.py
+######################################################
+- url: /img
+  static_dir: img
+########################################################
+- url: /upload_data
+  static_dir: upload_data
+- url: /upload_data/main.html
+  static_files: main.html
+  upload: main.html
+- url: /upload_data/data1
+  script: data1.py
+#######################################################
+- url: /admin
+  static_dir: admin
+- url: /admin/admin_index.html
+  static_files: admin_index.html
+  upload: admin_index.html
+- url: /admin/photo_info.html
+  static_files: photo_info.html
+  upload: photo_info.html
+- url: /admin/log_Index.html
+  static_files: log_Index.html
+  upload: log_Index.html
+- url: /admin/item_info.html
+  static_files: item_info.html
+  upload: item_info.html
+- url: /admin/subfunction_photoadd.html
+  static_files: subfunction_photoadd.html
+  upload: subfunction_photoadd.html
+#########################################################
+- url: /album
+  static_dir: album
+- url: /album/display.html
+  static_files: display.html
+  upload: display.html
+- url: /album/book.html
+  static_files: book.html
+  upload: book.html
+- url: /album/103_show.html
+  static_files: 103_show.html
+  upload: 103_show.html
+- url: /album/index.html
+  static_files: index.html
+  upload: index.html
+###################################################################
+- url: /html
+  static_dir: html
+- url: /html/register
+  static_files: register.html
+  upload: register.html
+- url: /html/head.html
+  static_files: head.html
+  upload: head.html
+- url: /html/item.html
+  static_files: item.html
+  upload: item.html
+###################################################################
+libraries:
+- name: webapp2
+  version: "2.5.2"
+- name: PIL
+  version: "1.1.7"
+- name: webob
+  version: "1.1.1"
+- name: django
+  version: "latest"

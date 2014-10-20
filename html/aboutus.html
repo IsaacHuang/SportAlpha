@@ -1,0 +1,40 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html;carset=utf-8">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+	</script>
+	<script>
+	$(document).ready(function(){
+		$('#item_1').click(function(){
+			$('#info_aboutus').hide();
+			$('#service').show();
+		});
+		$('#item_2').click(function(){
+			$('#info_aboutus').show();
+			$('#service').hide();
+		});
+	});
+	</script>
+	<style>
+		#guide_item{
+			width:10%;
+			float: left;
+			font-size: 26;
+			text-align: center;
+		}
+	</style>
+	</head>
+	<body>
+		<div id="guide_item">
+			<div id="item_1">服務項目</div>
+			<div id="item_2">交通資訊</div>
+		</div>
+	<center><div id="info_aboutus" style="width:85%;float:center;text-align:center;display:none;">
+		<font color="red"><h1>桃園縣龍潭鄉神龍路277號<br>(03)470-5638<br>營業時間：週一~週六<br> 下午1:00~晚上10:00<br></h1></font>
+		<img src="/img/map.jpg" style="width:70%;">
+	</div></center>
+	<center><div id="service" style="width:85%;padding:1%;float:center;text-align:center;">
+		<font color="purple"><h1>1、羽網專業穿線<br>2、羽球相關（如：拍子、衣服、褲子、球）<br>3、網球相關（如：拍子、衣服、褲子、球）<br>4、各類運動器材（籃框架、桌球桌、撞球檯...等）<br>5、各式球款（桌球、籃球、排球、躲避球、足球...等）<br>6、團服製作<br>7、獎盃、獎牌客製化製作<br>8 、網版印刷<br>
+	</div></center>
+	</body>
+</html>

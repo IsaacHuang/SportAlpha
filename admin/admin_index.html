@@ -1,0 +1,32 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<script>
+	function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) != -1) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+	function checkCookies(){
+		var visit=getCookie("visit");
+		if(visit=="administrator"){
+			alert("Welcom back !"+visit);
+			document.location.href='/admin/log_Index.html'
+		}else{
+			alert("Sorry ! You key in wrong information !")
+			document.location.href='/admin';
+		}
+	}
+	</script>
+	<title>後台管理</title>
+</head>
+<body onload="checkCookies()">
+</body>
+</html>

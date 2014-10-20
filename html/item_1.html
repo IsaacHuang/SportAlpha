@@ -1,0 +1,81 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html;carset=utf-8">
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+	</script>
+	<script>
+	$(document).ready(function(){
+		$('#brand_1').click(function(){
+			$('#item_brand_1').show();
+			$('#item_brand_2').hide();
+		});
+		$('#brand_2').click(function(){
+			$('#item_brand_1').hide();
+			$('#item_brand_2').show();
+		});
+		$('#next_1').click(function(){
+			$('#header_2').show();
+			$('#header_1').hide();
+		});
+		$('#pre_1').click(function(){
+			$('#header_1').show();
+			$('#header_2').hide();
+		});
+		$('#item_2').click(function(){
+			$('#content_1').show();
+		});
+		$('#flip').click(function(){
+			$('#panel').slideToggle("slow");
+		});
+	});
+	</script>
+	</head>
+	<body>
+		<center><div id="flip" style="height:5%;">收回/開啟公告板</div>
+	<div id="panel" style="height:5%;">
+		<h1><marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="1" height="100%"><center>† 此版面建制中 † </center><br><a href="https://sites.google.com/site/yangguangyuqiushe/config/pagetemplates/103nian-long-tan-xiang-zhang-bei-yu-qiu-yao-qing-sai-cheng-ji-gong-gao" target="_blank"><center>103年龍潭鄉長盃羽球邀請賽成績公告</center></a></marquee></h1>
+	</div>
+		<div id="header_1" style="height:10%;">
+			<h3><div style="width:10%;float:left;">&nbsp</div>
+				<div id="brand_1" style="width:20%;float:left;">Victor(勝利)</div>
+				<div id="brand_2" style="width:20%;float:left;">Fleet(富力特)</div>
+				<div id="brand_3" style="width:20%;float:left;">Exthree(超力)</div>
+				<div id="brand_4" style="width:20%;float:left;">XTRM(極限)</div>
+				<div id="next_1" style="width:10%;float:left;">下一排</div>
+			</h3>
+		</div>
+		<div id="header_2" style="height:10%;display:none;">
+			<h3>
+				<div id="pre_1" style="width:10%;float:left;">上一頁</div>
+				<div id="brand_1" style="width:20%;float:left;">Victor(利)</div>
+				<div id="brand_2" style="width:20%;float:left;">Fleet(力特)</div>
+				<div id="brand_3" style="width:20%;float:left;">Exthree(力)</div>
+				<div id="brand_4" style="width:20%;float:left;">XTRM(限)</div>
+				<div id="next_2" style="width:10%;float:left;">下一排</div>
+			</h3>
+		</div></center>
+		<div id="item_brand_1" style="width:10%;float:left;display:none;">
+			<h2>
+				<div id="item_1"><a href="http://www.victorsport.com.tw/index.html" target="_blank">官網</a></div>
+				<div id="item_2">球拍</div>
+				<div id="item_3">球鞋</div>
+				<div id="item_4">服裝</div>
+				<div id="item_5">配件</div>
+				<div id="item_6">羽球</div>
+			</h2>
+		</div>
+		<div id="item_brand_2" style="width:10%;float:left;display:none;">
+			<h2>
+				<div id="item_7"><a href="http://www.fleetsports.com.tw/" target="_blank">官網</a></div>
+				<div id="item_8">球拍</div>
+				<div id="item_9">球鞋</div>
+				<div id="item_10">服裝</div>
+				<div id="item_11">配件</div>
+				<div id="item_12">羽球</div>
+			</h2>
+		</div>
+		<center><div id="content_1" style="float:center;display:none;">
+			haahahhah
+		</div></center>
+	</body>
+</html>

@@ -1,0 +1,150 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html;carset=utf-8">
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+	</script>
+	<script>
+	$(document).ready(function(){$('#flip').click(function(){$('#panel').slideToggle("slow");});});
+	</script>
+	<style>
+		marquee {
+			font-family: "標楷體";
+			font-size: 50;
+			color: red;
+			height: 50;
+			text-align: center;
+		}
+		#brand{
+			text-align: center;
+		}
+		#victor{
+			color:green;
+		}
+		#fleet{
+			color:red;
+		}
+		#exthree{
+			color:09231c;
+		}
+		#XTRM{
+			color: 892133;
+		}
+		#racket_victor{
+			color:6493ac;
+		}
+		#racket_fleet{
+			color: 873697;
+		}
+		#racket_exthree{
+			color:93750c;
+		}
+		#racket_XTRM{
+			color:9cba6d;
+		}
+		#shoes_victor{
+			color:87ac64;
+		}
+		#shoes_fleet{
+			color:093c5b;
+		}
+		#shoes_exthree{
+			color:a7c8bd;
+		}
+		#shoes_XTRM{
+			color:b95ca0;
+		}
+		#shirt_vitor{
+			color:9b7f04;
+		}
+		#shirt_fleet{
+			color:946abd;
+		}
+		#shirt_exthree{
+			color:82c564;
+		}
+		#shirt_XTRM{
+			color:1d4a0b;
+		}
+		#accessory_victor{
+			color:6ac9b2;
+		}
+		#accessory_fleet{
+			color:bcff27;
+		}
+		#accessory_exthree{
+			color:bcdaa2;
+		}
+		#accessory_XTRM{
+			color:bc6350;
+		}
+		#badminton_victor{
+			color:38c7d5;
+		}
+		#badminton_fleet{
+			color:09211b;
+		}
+		#badminton_exthree{
+			color:eb4f70;
+		}
+		#badminton_XTRM{
+			color:aeb1f9;
+		}
+		#panel,#flip{
+			padding:5px;
+			text-align: center;
+			width:1000;
+			height:50;
+
+		}
+		#panle{
+			padding: 100px;
+			display:none;
+		}
+	</style>
+</head>
+<body>
+	<center><div id="flip">收回/開啟公告板</div>
+	<div id="panel">
+		<marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="2">† 此版面建制中 † <br><a href="https://sites.google.com/site/yangguangyuqiushe/config/pagetemplates/103nian-long-tan-xiang-zhang-bei-yu-qiu-yao-qing-sai-cheng-ji-gong-gao" target="_blank">103年龍潭鄉長盃羽球邀請賽成績公告</a></marquee>
+	</div></center>
+	<table id="brand" align="center">
+		<tr>
+			<td width='25%'><h1><a id="victor" href="http://www.victorsport.com.tw/index.html">Victor(勝利)</a>
+			</td>
+			<td width='25%'><h1><a id="fleet" href="http://www.fleetsports.com.tw/">Fleet(富力特)</a></td>
+			<td width='25%'><h1><a id="exthree" href="http://exthree.com.tw/">Exthree(超力)</a></td>
+			<td width='25%'><h1><a id="XTRM" href="http://www.x-trm.com.tw/big5/">XTRM極限</a></td>
+		</tr>
+		<tr>
+			<td width=200><a id="racket_victor" href="http://www.victorsport.com.tw/product_hot.html?pid=14&PHPSESSID=bc25505a2249aa20671197fc0e42c727">球拍</a></td>
+			<td width=200><a id="racket_fleet" href="http://www.fleetsports.com.tw/product/product-bat/">球拍</a></td>
+			<td width=200><a id="racket_exthree" href="http://exthree.com.tw/products/badminton-racket.html">球拍</a></td>
+			<td width=200><a id="racket_XTRM" href="http://www.x-trm.com.tw/big5/product.php?cs=5">球拍</a></td>
+
+		</tr>
+		<tr>
+			<td><a id="shoes_victor" href="http://www.victorsport.com.tw/product_hot.html?pid=19">球鞋</a></td>
+			<td><a id="shoes_fleet" href="http://www.fleetsports.com.tw/product/sportshoes/">球鞋</a></td>
+			<td><a id="shoes_exthree" href="http://www.exthree.com.tw/products/racket-bag.html">球鞋</a></td>
+			<td><a id="shoes_XTRM" href="http://www.x-trm.com.tw/big5/product.php?cs=6&ss=13">球鞋</a></td>
+		</tr>
+		<tr>
+			<td><a id="shirt_vitor" href="http://www.victorsport.com.tw/product_hot.html?pid=29">服裝</a></td>
+			<td><a id="shirt_fleet" href="http://www.fleetsports.com.tw/product/clothes/">服裝</a></td>
+			<td><a id="shirt_exthree" href="http://exthree.com.tw/products/clothing.html">服裝</a></td>
+			<td><a id="shirt_XTRM" href="http://www.x-trm.com.tw/big5/product.php?cs=7&ss=12">服裝</a></td>
+		</tr>
+		<tr>
+			<td><a id="accessory_victor" href="http://www.victorsport.com.tw/product_hot.html?pid=331">配件</a></td>
+			<td><a id="accessory_fleet" href="http://www.fleetsports.com.tw/product/fitting/">配件</a></td>
+			<td><a id="accessory_exthree" href="http://www.exthree.com.tw/products/accessories.html">配件</a></td>
+			<td><a id="accessory_XTRM" href="http://www.x-trm.com.tw/big5/product.php?cs=2&ss=29">配件</a></td>
+		</tr>
+		<tr>
+			<td><a id="badminton_victor" href="http://www.victorsport.com.tw/product_hot.html?pid=39">羽球</a></td>
+			<td><a id="badminton_fleet" href="http://www.fleetsports.com.tw/product/shuttlecock/">羽球</a></td>
+			<td><a id="badminton_exthree" href="http://exthree.com.tw/products/badminton.html">羽球</a></td>
+			<td><a id="badminton_XTRM" href="http://www.x-trm.com.tw/big5/product.php?cs=27">羽球</a></td>
+		</tr>
+	</body>
+</html>
