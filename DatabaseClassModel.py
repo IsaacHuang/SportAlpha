@@ -1,5 +1,6 @@
+# -*- coding: utf-8 -*-
 #StringProperty(multiline=True)儲存多行資料，不可超過500 bytes。
-#BtyeStringProperty()儲存存文字或是二進位資料，與StringProperty不同的地方在於，ByteStringProperty是尚未用文字編碼過的byte資料。
+#ByteStringProperty()儲存純文字或是二進位資料，與StringProperty不同的地方在於，ByteStringProperty是尚未用文字編碼過的byte資料。
 #TextPrpoperty()儲存資料形態為db.Text，無法製作索引、排序及條件比對。
 #BooleanProperty()儲存布林值。
 #IntegerProperty()儲存整數資料形態。
@@ -55,4 +56,11 @@ class items(db.Expando):
 	price=db.IntegerProperty()#價位
 	url=db.StringProperty(multiline=True)#商品網址
 	item=db.StringProperty(multiline=True)#商品名稱('utf-8')
+
+#圖片資料儲存
+class photo_info(db.Expando):
+	pid=db.StringProperty(multiline=True) #照片的號碼(utf-8)
+	value=db.ByteStringProperty() #圖檔值
+	date=db.DateTimeProperty(auto_now_add=True) #時間值
+
 
